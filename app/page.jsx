@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 // Replace with your own Formspree form ID
 const FORMSPREE_URL = "https://formspree.io/f/YOUR_FORM_ID";
 
+// Image is loaded from the Swedish site – no upload needed
+const CUBIQO_IMAGE = "https://event-demo-pied.vercel.app/bilder/cubiqo.jpg";
+
 const steps = ["Discover", "Interact", "Ask", "Book", "Follow up"];
 
 const visitorCan = [
@@ -536,7 +539,7 @@ export default function Page() {
             </p>
             <div className="demo-grid">
               <div className="cube-wrap">
-                <img src="/bilder/cubiqo.jpg" alt="Cubiqo with QR code" className="cube-img" />
+                <img src={CUBIQO_IMAGE} alt="Cubiqo with QR code" className="cube-img" />
               </div>
               <PhoneDemo />
             </div>
